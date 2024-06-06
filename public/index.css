@@ -1,0 +1,197 @@
+
+.profile-image {
+    width: 200px; 
+    height: 350px;
+    margin-top: 1em;
+    margin-left: 3em;
+}
+body{
+    background-color: bisque;
+}
+
+.full-name {
+    height: 30%;
+    margin-top: 1em;
+}
+
+.full-name p {
+    font-size: 2em;
+}
+
+.image-city-class img {
+    max-width: 50%;
+}
+
+.lang h2 {
+    font-size: 2em;
+}
+
+.table, tr, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.historical-title h2 {
+    font-size: 2em;
+}
+
+h3.h3-text {
+    font-size: 2em;
+}
+
+img.Albertons-image,
+img.kimberlys-image,
+img.Isandlwana-image {
+    max-width: 80%;
+
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.flex-container-sub {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+}
+
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-wrapper-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.col.s6.m2.l2.place-images.flex-container {
+    height: 21em;
+    align-items: center;
+}
+
+.col.s6.m2.l2.place-images.flex-container-sub {
+    height: 21em;
+    align-items: center;
+}
+
+img.love-image,
+img.psychology-image,
+img.death-image {
+    max-width: 100%;
+}
+
+
+.institution {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1em;
+    margin: 1em auto;
+    background-color: #196dc2;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(202, 45, 45, 0.1);
+    text-align: center;
+}
+
+.institution h5 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+@media screen and (max-width: 900px) {
+    .profile-image {
+        width: 75%;
+        padding-top: 1em;
+        object-fit: contain;
+    }
+
+    .full-name {
+        height: 0px;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    .full-name p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* city section styles */
+    .image-city-class img {
+        max-width: 100%;
+    }
+
+    .city-name {
+        text-align: center;
+    }
+
+    img.Albertons-image,
+    img.kimberlys-image,
+    img.Isandlwana-image {
+        max-width: 100%;
+    }
+
+    /*favorite styles*/
+
+    img.love-image,
+    img.psychology-image,
+    img.death-image {
+        max-width: 100%;
+    }
+}
+
+@media screen and (min-width: 577px) and (max-width: 900px) {
+    .profile-image {
+        width: 75%;
+        padding-top: 1em;
+        object-fit: contain;
+    }
+
+    .full-name {
+        height: 0px;
+        margin-top: 2em;
+        justify-content: center;
+    }
+
+    .full-name p {
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    /* city section styles */
+    .image-city-class img {
+        max-width: 100%;
+    }
+
+    .city-name {
+        text-align: center;
+    }
+
+    img.Albertons-image,
+    img.kimberlys-image,
+    img.Isandlwana-image {
+        max-width: 100%;
+    }
+
+    /*favorite styles*/
+
+    img.love-image,
+    img.pschology-image,
+    img.death-image {
+        max-width: 100%;
+    }
+}
+

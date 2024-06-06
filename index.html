@@ -1,0 +1,213 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Handlebars & materialized</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6">
+                <div class="valign-wrapper full-name">
+                    <p>{{user.fullName}}</p>
+                </div>
+            </div>
+            <div class="col s12 m6">
+                <div class="img-container">
+                    <img class="profile-image" src="{{./user.photo}}" alt="{{user.alt}}">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m6 l6">
+                <strong><p class="city-name">{{city.name}}</p></strong>
+                <div class="image-city-class">
+                    <img src="{{city.photo}}" alt="{{city.alt}}"> 
+                </div>
+            </div>
+
+            <div class="col s12 m6 l6">
+                <div class="city-text">
+                    <p>{{{city.description}}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <div class="lang">
+                    <h2>Foreign Language</h2>
+                </div>
+    
+                <div class="lang-text">
+                    <p>
+                        {{foreignLanguage.language}} Swahili is the official national language of Kenya and Tanzania, 
+                        and is spoken in Uganda, Rwanda, the Democratic Republic of Congo, Burundi, the Central African Republic, 
+                        the Comoro Islands, Malawi, east Zaire, southern Somalia,
+                         northern Mozambique, Ethiopia, Sudan, and Northern Zambia. 
+                         This the most spoken african langauge and should be spoken by every african child.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m12 l12">
+                <table class="table" style="width: 100%">
+                    {{#each foreignLanguage.phrases}}
+                    <tr>
+                        <td>{{englishPhrase}}</td>
+                        <td>{{foreignLanguage}}</td>
+                    </tr>
+                    {{/each}}
+                </table>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="historical-title">
+                    <h2>{{historyPageTitle.title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m2 l2">
+                <div>
+                    {{#each historicalPlaces}}
+                    <h3 class="h3-text">
+                        {{name-Alberton}}
+                    </h3>
+                    <p>{{{description-Alberton}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 l2 place-images flex-container">
+                {{#each historicalPlaces}}
+                    <div class="image-wrapper">
+                        <img class="Albertons-image" src="{{photo-Alberton}}" alt="{{alt-Alberton}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 push-s6 m2 l2">
+                <div>
+                    {{#each historicalPlaces}}
+                    <h3 class="h3-text">{{name-kdf}}</h3>
+                    <p>{{{description-kdf}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 pull-s6 m2 l2 place-images flex-container">
+                {{#each historicalPlaces}}
+                    <div class="image-wrapper">
+                        <img class="kimberlys-image" src="{{photo-kdf}}" alt="{{alt-kdf}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 m2 l2">
+                <div>
+                    {{#each historicalPlaces}}
+                    <h3 class="h3-text">{{name-isa}}</h3>
+                    <p>{{{description-isa}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 l2 place-images flex-container">
+                {{#each historicalPlaces}}
+                    <div class="image-wrapper">
+                        <img class="Isandlwana-image" src="{{photo-isa}}" alt="{{alt-isa}}">
+                    </div>
+                {{/each}}
+            </div>
+            
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="historical-title">
+                    <h2>{{Fav-Title.title}}</h2>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s6 m2 l2">
+                <div>
+                    {{#each favouriteSubjects}}
+                    <h3 class="h3-text">
+                        {{name-love}}
+                    </h3>
+                    <p>{{{description-love}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 l2 place-images flex-container">
+                {{#each favouriteSubjects}}
+                    <div class="image-wrapper">
+                        <img class="love-image" src="{{photo-love}}" alt="{{alt-love}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 push-s6 m2 l2">
+                <div>
+                    {{#each favouriteSubjects}}
+                    <h3 class="h3-text">{{name-psychology}}</h3>
+                    <p>{{{description-psychology}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 pull-s6 m2 l2 place-images flex-container">
+                {{#each favouriteSubjects}}
+                    <div class="image-wrapper">
+                        <img class="psychology-image" src="{{photo-psychology}}" alt="{{alt-psychology}}">
+                    </div>
+                {{/each}}
+            </div>
+
+            <div class="col s6 m2 l2">
+                <div>
+                    {{#each favouriteSubjects}}
+                    <h3 class="h3-text">{{name-Death}}</h3>
+                    <p>{{{description-Death}}}</p>
+                    {{/each}}
+                </div>
+            </div>
+            <div class="col s6 m2 l2 place-images flex-container">
+                {{#each favouriteSubjects}}
+                    <div class="image-wrapper">
+                        <img class="death-image" src="{{photo-Death}}" alt="{{alt-Death}}">
+                    </div>
+                {{/each}}
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

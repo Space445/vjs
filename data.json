@@ -1,0 +1,85 @@
+{
+    "user" : {
+        "fullName": "Prince Chauke",
+        "photo" : "./New.jpg",
+        "alt" : "Princes image"
+    },
+
+    "city" : {
+        "name" : "Barcelona",
+        "photo" : "./spain.webp",
+        "description" : "<p>Barcelona is the capital of Catalonia and the second largest city in Spain</p>\n<p>A total of 1,656,725 people live in this city, which is bathed by the Mediterranean Sea and inextricably linked to modernist architecture and the work of Gaudí.</p>",
+        "alt" : "Barcelonas image"
+    },
+
+    "foreignLanguage" : {
+        "language" : "Swahili",
+        "phrases" : [{
+            "englishPhrase" : "Hey how are you '",
+            "foreignLanguage" : "jamani habari zenu"
+        },
+        {
+            "englishPhrase" : "This means 'I love you.'",
+            "foreignLanguage" : "Nakupenda"
+        },
+        {
+            "englishPhrase" : "This word means 'I Respect you'",
+            "foreignLanguage" : "Nakuheshimu"
+        },
+
+        {
+            "englishPhrase" : "This means 'Better be right or you are dead'",
+            "foreignLanguage" : "Bora uwe sahihi au umekufa"
+        }]
+    },
+
+    "historyPageTitle" : {
+        "title" : "Historical Places"
+    },
+
+    "historicalPlaces" : [
+        {
+            "name-Alberton" : "Alberton",
+            "description-Alberton" : "<p>In 1904, the land was sold for the sum of 20,000 pounds, and the new town of Alberton was founded. Alberton was officially established as a township in 1909.</p>",
+            "photo-Alberton" : "./download.jpg",
+            "alt-Alberton" : "Albertons image"
+        },
+        {
+            "name-kdf" : "Kimberly diamond fields",
+            "description-kdf" : "<p>South Africa's Kimberley diamond fields, along with discoveries in Gauteng, the Free State, and the Atlantic coast, made it the world's leading gem-quality diamond producer by the mid-20th century.</p>",
+            "photo-kdf" : "./diamondfields.png",
+            "alt-kdf" : "kimberlys image"
+        },
+        {
+            "name-isa" : "Isandlwana Battlefield",
+            "description-isa" : "<p>On January 22, 1879, about 20,000 Zulu warriors under King Cetshwayo ambushed and defeated a British camp at the Battle of Isandlwana.</p>",
+            "photo-isa" : "./isa.webp",
+            "alt-isa" : "Isandlwana image"
+        }
+    ],
+
+    "Fav-Title" : {
+        "title" : "Favorite Subjects"
+    },
+    
+    "favouriteSubjects" : [
+        {
+            "name-love" : "True love",
+            "description-love" : "<p>True love fosters a connection that goes beyond the superficial. It's a bond that often involves understanding each other's core values, beliefs, and life goals.</P>",
+            "photo-love" : "./love.jpg",
+            "alt-love" : "love picture"
+        },
+        {
+            "name-psychology" : "Human Psychology",
+            "description-psychology" : "<p>What is human psychology? Human psychology is the study of the mind and human behavior.</p>",
+            "photo-psychology" : "./human_mind.png",
+            "alt-psychology" : "psychology picture"
+        },
+        {
+            "name-Death" : "Death",
+            "description-Death" : "<p>More specifically, death occurs when a living entity experiences irreversible cessation of all functioning.</P>",
+            "photo-Death" : "./death.jpg",
+            "alt-Death" : "Death picture"
+        }
+    ]
+}
